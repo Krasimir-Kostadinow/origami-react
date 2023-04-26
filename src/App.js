@@ -1,9 +1,11 @@
-import './App.css';
+import React from 'react';
+import styles from './app.module.css';
+import Header from './components/header';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Starting first project with ReactJs</h1>
+    <div className={styles.app}>
+      <Header />
     </div>
   );
 }
