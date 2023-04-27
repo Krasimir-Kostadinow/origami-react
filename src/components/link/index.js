@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "../link/index.module.css";
 
-const Link = ({ title, href }) => {
+const Link = ({ title, href, type }) => {
     return (
-        <div>
-            <a href={href}>{title}</a>
+        <div className={styles[`${type}-list-item`]}>
+            <a className={styles[`${type}-link`]} href={href}>{title}</a>
         </div>
     );
 }
